@@ -9,7 +9,7 @@ interface IProps {
 
 export function PersonCard({ imgSrc, name, children }: IProps) {
   return (
-    <div className="container min-w-fit py-5 flex flex-col items-center justify-center content-center sm:flex-row hover:translate-y-[1.5px] transition hover:cursor-pointer dark:border-b-gray-700 border-solid border-b h-fit max-w-full">
+    <div className="container min-w-fit py-5 flex flex-col items-center justify-center content-center m:flex-row hover:translate-y-[1.5px] transition hover:cursor-pointer dark:border-b-gray-700 border-solid border-b h-fit max-w-full">
       <div className="picture flex  min-w-fit sm:min-w-[4rem] sm:w-24 h-[6em] relative sm:mb-0 sm:mr-5 items-center">
         <Image
           className="rounded-full w-14 sm:w-auto"
@@ -19,7 +19,7 @@ export function PersonCard({ imgSrc, name, children }: IProps) {
           width={400}
         />
       </div>
-      <div className="flex flex-col signature h-[6em] w-full relative border-solid items-center content-center justify-center">
+      <div className="signature flex flex-col h-[6em] w-full relative border-solid items-center content-center justify-center">
         <h1 className="flex text-base min-w-max font-bold text-slate-900 dark:text-gray-200 justify-center">
           <p>{name}</p>
         </h1>
