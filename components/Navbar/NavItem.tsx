@@ -13,7 +13,7 @@ export function NavItem({ name, href }: IProps) {
   return (
     <>
       <Link
-        className={`${activeClass} text-gray-800 dark:text-gray-200 hidden md:inline-block p-1 sm:px-3 sm:py-2 hover:translate-x-[-1px] dark:hover:bg-gray-800 transition-all border-l`}
+        className={`${activeClass} text-gray-800 dark:text-gray-200 dark:border-l-gray-700 hidden md:inline-block p-1 sm:px-3 sm:py-2 hover:translate-x-[-1px] transition-all border-l`}
         href={href}
       >
         <span>{name}</span>

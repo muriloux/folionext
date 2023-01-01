@@ -11,12 +11,13 @@ export default function Home() {
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="px-64 py-32 pt-3">
+      <main className="px-36 sm:px-64 py-32 pt-3">
         <Navbar />
         <section className="container min-w-full" id="about">
           <PersonCard
             name="Murilo Melo"
-            description="Typescript / Javascript Developer"
+            description="Typescript/
+             Javascript Developer"
             imgSrc="/avatar.png"
           />
         </section>
