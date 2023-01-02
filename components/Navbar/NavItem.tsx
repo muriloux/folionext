@@ -8,12 +8,12 @@ interface IProps {
 
 export function NavItem({ name, href }: IProps) {
   const { asPath } = useRouter();
-  const activeClass = asPath === href ? "font-bold" : "font-medium";
+  const isActiveClass = asPath === href ? "font-bold" : "font-medium";
 
   return (
     <>
       <Link
-        className={`${activeClass} text-gray-800 dark:text-gray-200 dark:border-l-gray-700 hidden md:inline-block p-1 sm:px-3 sm:py-2 hover:translate-x-[-1px] transition-all border-l`}
+        className={`${isActiveClass} text-gray-800 dark:text-gray-200 dark:border-l-gray-700 hidden md:inline-block p-1 sm:px-3 sm:py-2 hover:translate-x-[-1px] transition-all border-l`}
         href={href}
       >
         <span>{name}</span>

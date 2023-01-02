@@ -1,9 +1,9 @@
 import Head from "next/head";
-import { SEO } from "../components/SEO";
-import { PersonCard } from "../components/PersonCard";
 import Navbar from "../components/Navbar";
-import { Intro } from "../components/Intro";
-import { SkillCard } from "../components/SkillCard";
+import Intro from "../components/Intro";
+import Skills from "../components/Skills";
+import { PersonCard } from "../components/PersonCard";
+import { SEO } from "../components/SEO";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="px-8 sm:px-64 py-32 pt-3 ">
+      <main className="px-8 sm:px-36 md:px-60 py-32 pt-3">
         <Navbar />
         <section className="container min-w-full" id="about">
           <PersonCard name="Murilo Melo" imgSrc="/avatar.png">
@@ -26,16 +26,7 @@ export default function Home() {
           <Intro />
         </section>
         <section id="skills">
-          <div className="container flex flew-col sm:flex-row">
-            <SkillCard
-              name="Typescript"
-              description="Pariatur proident ad mollit anim magna laboris aliquip irure. Qui magna minim tempor magna qui velit esse aliquip sit. Proident magna cupidatat id aute magna amet est mollit eu."
-            />
-            <SkillCard
-              name="ReactJS"
-              description="Laboris deserunt qui nulla eu est elit sunt irure. Occaecat eiusmod duis sunt sit eiusmod Lorem culpa quis deserunt. Minim sit proident veniam quis ex irure consectetur deserunt sunt elit anim. Anim officia fugiat irure anim quis pariatur. Sunt minim deserunt eu veniam anim do aliquip qui enim mollit ullamco eu. Dolore ut laboris deserunt voluptate labore incididunt sit quis cillum occaecat in."
-            />
-          </div>
+          <Skills />
         </section>
       </main>
     </>

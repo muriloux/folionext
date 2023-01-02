@@ -1,6 +1,6 @@
 interface IProps {}
 
-export function Intro() {
+export default function Intro() {
   return (
     <article className="py-5">
       <p className="text-justify text-slate-500">
