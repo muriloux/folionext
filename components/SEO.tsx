@@ -40,6 +40,7 @@ export function SEO({
       <meta name="google" content="notranslate" />
 
       <meta property="description" content={description} />
+      <meta property="image" content={pageImage} />
 
       <meta property="og:title" content={pageTitle} />
       <meta property="og:description" content={description} />

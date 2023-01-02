@@ -8,7 +8,11 @@ import { SEO } from "../components/SEO";
 export default function Home() {
   return (
     <>
-      <SEO title="Home" description="Murilo Melo's Developer Portfolio" />
+      <SEO
+        title="Home"
+        description="Murilo Melo's Developer Portfolio"
+        image="avatar.png"
+      />
       <Head>
         <link rel="icon" href="/favicon.svg" />
       </Head>
