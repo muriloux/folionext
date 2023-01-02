@@ -15,7 +15,11 @@ export function SEO({
   excludeTitleSuffix = false,
   indexPage = true,
 }: ISEOProps) {
-  const pageTitle = `${title} ${!excludeTitleSuffix ? "| Murilo Melo" : ""}`;
+  const pageTitle = `${title} ${
+    !excludeTitleSuffix
+      ? "| Murilo Melo - Typescript & Javascript Developer"
+      : ""
+  }`;
 
   const pageImage = image
     ? `${process.env.NEXT_PUBLIC_SITE_URL}/${image}`
@@ -34,6 +38,8 @@ export function SEO({
       <meta name="msapplication-TileColor" content="#302F38" />
       <meta name="referrer" content="no-referrer-when-downgrade" />
       <meta name="google" content="notranslate" />
+
+      <meta property="description" content={description} />
 
       <meta property="og:title" content={pageTitle} />
       <meta property="og:description" content={description} />

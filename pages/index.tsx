@@ -8,9 +8,9 @@ import { SEO } from "../components/SEO";
 export default function Home() {
   return (
     <>
-      <SEO title="Home" />
+      <SEO title="Home" description="Murilo Melo's Developer Portfolio" />
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
       <main className="px-8 sm:px-36 md:px-60 py-32 pt-3">
         <Navbar />
