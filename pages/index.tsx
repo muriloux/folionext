@@ -15,7 +15,11 @@ export default function Home() {
       <main className="px-8 sm:px-36 md:px-60 py-32 pt-3">
         <Navbar />
         <section className="container min-w-full" id="about">
-          <PersonCard name="Murilo Melo" imgSrc="/avatar.png">
+          <PersonCard
+            name="Murilo Melo"
+            imgSrc="/avatar.png"
+            personalUrl="https://github.com/muriloux"
+          >
             <span>&nbsp;Typescript&nbsp;</span>
             <span>&nbsp;&&nbsp;</span>
             <span>&nbsp;Javascript&nbsp;</span>

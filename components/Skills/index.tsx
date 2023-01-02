@@ -3,15 +3,10 @@ import { SkillCard } from "./SkillCard";
 export default function Skills() {
   return (
     <div className="py-5">
-      <h1 className="flex text-base font-bold text-slate-900 dark:text-gray-200 justify-center">
+      <h1 className="flex text-xl font-bold py-16 text-slate-900 sm:text-xl dark:text-gray-200 justify-center">
         <p>Skills</p>
       </h1>
       <div className="container flex flex-wrap justify-center flex-row">
-        <SkillCard
-          name="NodeJS"
-          imgSrc="/logos/Node.svg"
-          url="https://nodejs.org/"
-        />
         <SkillCard
           name="Javascript"
           imgSrc="/logos/JS.svg"
@@ -29,8 +24,9 @@ export default function Skills() {
         />
         <SkillCard
           name="NextJS"
-          imgSrc="/logos/Next.png"
+          imgSrc="/logos/Next.svg"
           url="https://nextjs.org/"
+          blackLogo
         />
         <SkillCard
           name="Sass"
@@ -43,9 +39,46 @@ export default function Skills() {
           url="https://tailwindcss.com/"
         />
         <SkillCard
+          name="Express"
+          imgSrc="/logos/Express.svg"
+          url="https://expressjs.com/"
+          blackLogo
+        />
+        <SkillCard
+          name="Prisma"
+          imgSrc="/logos/Prisma.svg"
+          url="https://www.prisma.io/"
+          blackLogo
+        />
+        <SkillCard
+          name="TypeORM"
+          imgSrc="/logos/TypeORM.svg"
+          url="https://typeorm.io/"
+        />
+        <SkillCard
+          name="Mongoose"
+          imgSrc="/logos/Mongoose.svg"
+          url="https://mongoosejs.com/"
+        />
+        <SkillCard
           name="MongoDB"
           imgSrc="/logos/Mongo.svg"
           url="https://www.mongodb.com/"
+        />
+        <SkillCard
+          name="SQLite"
+          imgSrc="/logos/SQLite.svg"
+          url="https://www.sqlite.org/"
+        />
+        <SkillCard
+          name="MySQL"
+          imgSrc="/logos/MySQL.svg"
+          url="https://www.mysql.com/"
+        />
+        <SkillCard
+          name="PostgreSQL"
+          imgSrc="/logos/PostgreSQL.svg"
+          url="https://www.postgresql.org/"
         />
       </div>
     </div>

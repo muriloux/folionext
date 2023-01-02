@@ -14,6 +14,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth !important
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,7 +31,6 @@ html,
 body {
   width: 100vw;
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 
 body {
