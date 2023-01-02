@@ -11,7 +11,7 @@ interface IProps {
 
 export function PersonCard({ imgSrc, personalUrl, name, children }: IProps) {
   return (
-    <div className="container min-w-fit py-16 flex flex-col items-center justify-center content-center m:flex-row hover:translate-y-[2px] transition dark:border-b-gray-700 border-solid border-b-slate-300 border-b h-fit max-w-full">
+    <div className="container min-w-fit py-10 flex flex-col items-center justify-center content-center m:flex-row hover:translate-y-[2px] transition dark:border-b-gray-700 border-solid border-b-slate-300 border-b h-fit max-w-full">
       <div className="picture flex  min-w-[4rem] min-h-[4em] w-20 md:w-24  relative mb-4 items-center">
         <Link href={personalUrl} target="_blank">
           <Image

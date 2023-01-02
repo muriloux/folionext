@@ -15,7 +15,7 @@ export function SEO({
   excludeTitleSuffix = false,
   indexPage = true,
 }: ISEOProps) {
-  const pageTitle = `${title} ${!excludeTitleSuffix ? "| Folio" : ""}`;
+  const pageTitle = `${title} ${!excludeTitleSuffix ? "| Murilo Melo" : ""}`;
 
   const pageImage = image
     ? `${process.env.NEXT_PUBLIC_SITE_URL}/${image}`
