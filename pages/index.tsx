@@ -11,7 +11,7 @@ export default function Home() {
       <SEO
         title="Home"
         description="Murilo Melo's Developer Portfolio"
-        image="/avatar.png"
+        image="https://murilomelo.vercel.app/public/avatar.png"
       />
       <Head>
         <link rel="icon" href="/favicon.svg" />
