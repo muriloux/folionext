@@ -40,7 +40,7 @@ export const NavHamburguer: FunctionComponent<IProps> = ({
       type="button"
     >
       <Image
-        className="w-8 h-8 dark:filter invert"
+        className="w-8 h-8 filter-none dark:filter invert"
         src="menu.svg"
         alt="menu"
         width={24}
