@@ -28,10 +28,6 @@ export function SEO({
   return (
     <Head>
       <title>{pageTitle}</title>
-      <meta
-        http-equiv="Content-Security-Policy"
-        content="default-src 'self' https://vitals.vercel-insights.com"
-      />
       {description && <meta name="description" content={description} />}
       {pageImage && <meta name="image" content={pageImage} />}
       {indexPage && <meta name="robots" content="noindex,nofollow" />}
