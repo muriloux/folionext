@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Navbar from "../components/Navbar";
+import { Navbar } from "../components/Navbar";
 import Intro from "../components/Intro";
 import Skills from "../components/Skills";
 import { PersonCard } from "../components/PersonCard";
