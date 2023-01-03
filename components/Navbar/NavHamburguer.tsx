@@ -35,12 +35,12 @@ export const NavHamburguer: FunctionComponent<IProps> = ({
     <button
       id="Hamburguer"
       onClick={handleClick}
-      className="w-8 h-8 min-w-[2rem] md:absolute md:float-left visible filter-none md:hidden dark:filter invert"
+      className="w-8 h-8 min-w-[2rem] md:absolute md:float-left visible filter-none md:hidden hover:bg-slate-200 dark:hover:bg-zinc-800"
       aria-label="Toggle menu"
       type="button"
     >
       <Image
-        className="w-8 h-8"
+        className="w-8 h-8 dark:filter invert"
         src="menu.svg"
         alt="menu"
         width={24}
