@@ -16,7 +16,7 @@ export default function Home() {
       <Head>
         <link rel="icon" href="/favicon.svg" />
       </Head>
-      <main className="px-8 sm:px-36 md:px-60 py-32 pt-3">
+      <main className="px-6 sm:px-36 md:px-52 py-32 pt-3">
         <Navbar />
         <section className="container min-w-full" id="about">
           <PersonCard
