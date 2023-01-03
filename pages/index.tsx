@@ -24,9 +24,7 @@ export default function Home() {
             imgSrc="/avatar.png"
             personalUrl="https://github.com/muriloux"
           >
-            <span>&nbsp;Typescript&nbsp;</span>
-            <span>&nbsp;&&nbsp;</span>
-            <span>&nbsp;Javascript&nbsp;</span>
+            <span>&nbsp;Typescript&nbsp;&&nbsp;Javascript</span>
             <span>&nbsp;Developer&nbsp;</span>
           </PersonCard>
         </section>

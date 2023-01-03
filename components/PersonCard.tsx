@@ -29,7 +29,7 @@ export function PersonCard({ imgSrc, personalUrl, name, children }: IProps) {
             <p>{name}</p>
           </h1>
         </Link>
-        <h2 className="flex flex-col sm:flex-row text-sm font-medium text-slate-500 justify-center items-center">
+        <h2 className="flex flex-col sm:flex-row text-sm font-semibold text-slate-500 justify-center items-center">
           {children}
         </h2>
       </div>
