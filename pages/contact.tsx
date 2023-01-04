@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Intro from "../components/Intro";
 import Skills from "../components/Skills";
 import { PersonCard } from "../components/PersonCard";
@@ -7,7 +8,7 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="Home"
+        title="Contacts"
         description="Murilo Melo's Developer Portfolio"
         image="https://murilomelo.vercel.app/public/avatar.png"
       />
@@ -21,12 +22,6 @@ export default function Home() {
           <span>&nbsp;Typescript&nbsp;&&nbsp;Javascript</span>
           <span>&nbsp;Developer&nbsp;</span>
         </PersonCard>
-      </section>
-      <section id="intro">
-        <Intro />
-      </section>
-      <section id="skills">
-        <Skills />
       </section>
     </>
   );

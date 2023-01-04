@@ -1,4 +1,3 @@
-import Image from "next/image";
 import {
   Dispatch,
   FunctionComponent,
@@ -6,6 +5,7 @@ import {
   SetStateAction,
   useEffect,
 } from "react";
+import { FiMenu } from "react-icons/fi";
 
 interface IProps {
   open: ReactNode;
@@ -35,17 +35,11 @@ export const NavHamburguer: FunctionComponent<IProps> = ({
     <button
       id="Hamburguer"
       onClick={handleClick}
-      className="w-8 h-8 min-w-[2rem] md:absolute md:float-left visible filter-none md:hidden hover:bg-slate-200 dark:hover:bg-zinc-800"
+      className="flex w-8 h-8 min-w-[2rem] md:absolute md:float-left visible justify-center items-center filter-none md:hidden hover:bg-slate-200 dark:hover:bg-zinc-800"
       aria-label="Toggle menu"
       type="button"
     >
-      <Image
-        className="w-8 h-8 filter-none dark:filter invert"
-        src="menu.svg"
-        alt="menu"
-        width={24}
-        height={24}
-      />
+      <FiMenu size={25} />
     </button>
   );
 };

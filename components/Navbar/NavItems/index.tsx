@@ -24,6 +24,7 @@ export const NavItems: FunctionComponent<IProps> = ({ open, setOpen }) => {
       <NavItem name="Home" href="/" />
       <NavItem name="Skills" href="/#skills" />
       <NavItem name="Projects" href="/#projects" />
+      <NavItem name="Contact" href="/contact" />
     </div>
   );
 };
