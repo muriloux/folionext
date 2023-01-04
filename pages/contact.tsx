@@ -1,8 +1,6 @@
-import Head from "next/head";
-import Intro from "../components/Intro";
-import Skills from "../components/Skills";
 import { PersonCard } from "../components/PersonCard";
 import { SEO } from "../components/SEO";
+import ContactList from "../components/ContactList";
 
 export default function Home() {
   return (
@@ -22,6 +20,9 @@ export default function Home() {
           <span>&nbsp;Typescript&nbsp;&&nbsp;Javascript</span>
           <span>&nbsp;Developer&nbsp;</span>
         </PersonCard>
+      </section>
+      <section className="container min-w-full" id="contactlist">
+        <ContactList />
       </section>
     </>
   );

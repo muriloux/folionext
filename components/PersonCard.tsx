@@ -20,6 +20,7 @@ export function PersonCard({ imgSrc, personalUrl, name, children }: IProps) {
             src={imgSrc}
             height={400}
             width={400}
+            priority
           />
         </Link>
       </div>
