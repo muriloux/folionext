@@ -1,5 +1,3 @@
-interface IProps {}
-
 export default function Intro() {
   return (
     <article className="py-5">

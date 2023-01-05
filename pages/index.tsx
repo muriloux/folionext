@@ -15,7 +15,7 @@ export default function Home() {
       <section className="container min-w-full" id="about">
         <PersonCard
           name="Murilo Melo"
-          imgSrc="/avatar.png"
+          imgSrc="/avatar.webp"
           personalUrl="https://github.com/muriloux"
         >
           <span>&nbsp;Typescript&nbsp;&&nbsp;Javascript</span>

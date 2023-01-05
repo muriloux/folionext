@@ -1,3 +1,5 @@
+import { GetStaticProps } from "next";
+
 export default function NotFound() {
   return (
     <>
@@ -12,10 +14,10 @@ export default function NotFound() {
   );
 }
 
-export async function getStaticProps() {
+export const getStaticProps: GetStaticProps = async () => {
   return {
     props: {
       is404: true,
     },
   };
-}
+};

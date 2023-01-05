@@ -18,8 +18,8 @@ export function PersonCard({ imgSrc, personalUrl, name, children }: IProps) {
             className="hover:scale-[1.02] transition-all rounded-full w-20 sm:w-auto hover:cursor-pointer"
             alt={name}
             src={imgSrc}
-            height={400}
-            width={400}
+            height={500}
+            width={500}
             priority
           />
         </Link>

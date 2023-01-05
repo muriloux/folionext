@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import { CgSpinnerAlt } from "react-icons/cg";
 
 interface IProps {
   name: string;
@@ -16,6 +18,12 @@ export function SkillCard({
   url,
   blackLogo,
 }: IProps) {
+  const router = useRouter();
+
+  if (router.isFallback) {
+    return <CgSpinnerAlt className="animate-spin" width={20} height={20} />;
+  }
+
   return (
     <div className="hover:translate-y-[2px] transition">
       <Link href={url ? url : "#skills"} target="_blank">

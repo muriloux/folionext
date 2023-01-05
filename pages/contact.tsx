@@ -8,13 +8,13 @@ export default function Home() {
       <SEO
         title="Contacts"
         description="Murilo Melo's Developer Portfolio"
-        image="https://murilomelo.vercel.app/public/avatar.png"
+        image="https://murilomelo.vercel.app/public/avatar.webp"
       />
 
       <section className="container min-w-full" id="about">
         <PersonCard
           name="Murilo Melo"
-          imgSrc="/avatar.png"
+          imgSrc="/avatar.webp"
           personalUrl="https://github.com/muriloux"
         >
           <span>&nbsp;Typescript&nbsp;&&nbsp;Javascript</span>

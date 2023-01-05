@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 import { FiGithub, FiMail, FiLinkedin } from "react-icons/fi";
+import { IconWhatsapp } from "../Icons/IconWhatsapp";
 import { ContactListItem } from "./ContactListItem";
 
 export default function ContactList() {
@@ -33,13 +33,7 @@ export default function ContactList() {
         </Link>
       </ContactListItem>
       <ContactListItem>
-        <Image
-          className="w-[14px] h-[14px] filter-none dark:filter invert"
-          src="whatsapp.svg"
-          alt="whatsapp"
-          width={50}
-          height={50}
-        />
+        <IconWhatsapp />
         &nbsp;WhatsApp:&nbsp;
         <Link
           className="text-sky-500 underline"
