@@ -9,7 +9,7 @@ export default function Home() {
       <SEO
         title="Home"
         description="Murilo Melo's Developer Portfolio"
-        image="https://murilomelo.vercel.app/public/avatar.png"
+        image="https://murilomelo.vercel.app/public/avatar.webp"
       />
 
       <section className="container min-w-full" id="about">
