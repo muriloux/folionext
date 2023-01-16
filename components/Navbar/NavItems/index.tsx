@@ -1,11 +1,4 @@
-import {
-  FunctionComponent,
-  ReactNode,
-  useRef,
-  useEffect,
-  Dispatch,
-  SetStateAction,
-} from "react";
+import { FunctionComponent, ReactNode, Dispatch, SetStateAction } from "react";
 import { NavItem } from "./NavItem";
 
 interface IProps {
