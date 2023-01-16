@@ -24,11 +24,20 @@ export const NavHamburguer: FunctionComponent<IProps> = ({
     const EvTarget = window.document.getElementById("Hamburguer") as
       | EventTarget
       | any;
-    window.addEventListener("click", (event) => {
+
+    const listener = (event: Event) => {
       if (!EvTarget?.contains(event.target)) {
+        event.stopPropagation();
+
         setOpen(false);
       }
-    });
+    };
+
+    window.addEventListener("click", listener);
+
+    return () => {
+      window.removeEventListener("click", listener);
+    };
   });
 
   return (

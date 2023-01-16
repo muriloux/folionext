@@ -9,7 +9,7 @@ interface IProps {
 
 export const NavItem: FunctionComponent<IProps> = ({ name, href }: IProps) => {
   const { asPath } = useRouter();
-  const isActiveClass = asPath === href ? "font-bold" : "font-medium";
+  const isActiveClass = asPath == href ? "font-bold" : "font-medium";
 
   return (
     <>
