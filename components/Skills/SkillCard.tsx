@@ -28,7 +28,7 @@ export function SkillCard({
     <div className="hover:translate-y-[2px] transition">
       <Link href={url ? url : "#skills"} target="_blank">
         <div className="group flex flex-col min-w-fit py-5 px-5 items-center justify-center">
-          <h2 className="text-xs text-slate-400 py-1">{name}</h2>
+          <h2 className="text-xs text-gray-500 py-1">{name}</h2>
           {description && (
             <p className="text-sm text-center text-slate-400">{description}</p>
           )}
