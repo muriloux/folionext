@@ -6,9 +6,9 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="Contacts"
+        title="Contact"
         description="Murilo Melo's Developer Portfolio"
-        image="https://murilomelo.vercel.app/public/avatar.webp"
+        image="/avatar.webp"
       />
 
       <section className="container min-w-full" id="about">
