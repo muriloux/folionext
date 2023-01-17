@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-interface ISEOProps {
+interface IProps {
   title: string;
   description?: string;
   image?: string;
@@ -14,7 +14,7 @@ export function SEO({
   image,
   excludeTitleSuffix = false,
   indexPage = true,
-}: ISEOProps) {
+}: IProps) {
   const pageTitle = `${title} ${
     !excludeTitleSuffix
       ? "| Murilo Melo - Typescript & Javascript Developer"
