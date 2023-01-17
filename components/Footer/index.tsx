@@ -7,7 +7,7 @@ interface IProps {}
 
 export const Footer: FunctionComponent<IProps> = (props: IProps) => {
   return (
-    <footer className="container flex flex-row mt-48 justify-evenly border-solid border-b-slate-300 dark:border-b-gray-700 border-t">
+    <footer className="container flex flex-row mt-48 justify-evenly border-solid border-t-slate-300 dark:border-t-gray-700 border-t">
       <div id="footer-about" className="flex flex-col">
         <PersonCard
           name="Murilo Melo"
