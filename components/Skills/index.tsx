@@ -1,10 +1,14 @@
 import { SkillCard } from "./SkillCard";
+import { HiOutlineCog8Tooth } from "react-icons/hi2";
 
 export default function Skills() {
   return (
     <div className="py-5">
-      <h1 className="flex text-xl font-bold py-16 text-slate-900 sm:text-xl dark:text-gray-200 justify-center">
-        <p>Skills</p>
+      <h1 className="flex text-xl font-bold pt-14 pb-8 text-slate-900 sm:text-xl dark:text-gray-200 justify-center">
+        <p className="flex justify-center items-center">
+          <HiOutlineCog8Tooth />
+          &nbsp;Skills&nbsp;
+        </p>
       </h1>
       <div className="container flex flex-wrap justify-center flex-row">
         <SkillCard

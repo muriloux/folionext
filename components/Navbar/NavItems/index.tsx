@@ -11,8 +11,8 @@ export const NavItems: FunctionComponent<IProps> = ({ open, setOpen }) => {
     <div
       id="NavItems"
       className={`${
-        open ? "visible opacity-100" : "invisible opacity-0"
-      } flex flex-col z-10 bg-[var(--background)] left-0 min-w-full absolute dark:bg-zinc-900 md:inline-block md:visible md:opacity-100 md:relative md:flex-row transition-all`}
+        open ? "translate-x-full" : "-translate-x-full"
+      } flex flex-col right-full md:right-0 md:translate-x-0 md:left-auto z-10 bg-[var(--background)] min-w-full absolute dark:bg-zinc-900 md:inline-block md:visible md:opacity-100 md:relative md:flex-row transition-all duration-500`}
     >
       <NavItem name="Home" href="/" />
       <NavItem name="Skills" href="/#skills" />

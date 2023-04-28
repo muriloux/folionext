@@ -21,7 +21,7 @@ export function PersonCard({
     <div
       className={`${
         !footerVersion && "border-b"
-      } container min-w-fit py-10 flex flex-col items-center justify-center content-center m:flex-row hover:translate-y-[2px] transition dark:border-b-gray-700 border-solid border-b-slate-300 h-fit max-w-full`}
+      } container min-w-fit py-7 flex flex-col items-center justify-center content-center m:flex-row hover:translate-y-[2px] transition dark:border-b-gray-700 border-solid border-b-slate-300 h-fit max-w-full`}
     >
       {imgSrc && (
         <div className="picture flex  min-w-[4rem] min-h-[4em] w-20 md:w-24  relative mb-4 items-center">
@@ -38,7 +38,13 @@ export function PersonCard({
         </div>
       )}
 
-      <div className="signature flex flex-col w-full relative border-solid items-center content-center justify-center">
+      <div
+        className={`${
+          footerVersion
+            ? "justify-start content-start items-start"
+            : "justify-center"
+        } signature flex flex-col w-full relative border-solid`}
+      >
         <Link href={personalUrl} target="_blank">
           <h1
             className={`${

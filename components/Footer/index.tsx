@@ -10,7 +10,7 @@ export const Footer: FunctionComponent<IProps> = (props: IProps) => {
     <footer className="container flex flex-row mt-48 justify-evenly border-solid border-t-slate-300 dark:border-t-gray-700 border-t">
       <div id="footer-about" className="flex flex-col">
         <PersonCard
-          name="Murilo Melo"
+          name="&nbsp;Murilo Melo&nbsp;"
           personalUrl="https://github.com/muriloux"
           footerVersion
         >
