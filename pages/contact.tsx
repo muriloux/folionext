@@ -8,7 +8,7 @@ export default function Home() {
       <SEO
         title="Contact"
         description="Murilo Melo's Developer Portfolio"
-        image="/avatar.webp"
+        image="https://avatars.githubusercontent.com/u/90528537?v=4"
       />
 
       <section className="container min-w-full" id="about">

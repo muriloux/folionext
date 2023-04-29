@@ -21,9 +21,7 @@ export function SEO({
       : ""
   }`;
 
-  const pageImage = image
-    ? `${process.env.NEXT_PUBLIC_SITE_URL}${image}`
-    : undefined;
+  const pageImage = image;
 
   return (
     <Head>
