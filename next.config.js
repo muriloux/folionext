@@ -16,6 +16,14 @@ const headers = async () => {
 
 const nextConfig = {
   reactStrictMode: true,
+  images: {
+    domains: [
+      "avatars.githubusercontent.com",
+      "murilomelo.vercel.app",
+      "localhost",
+    ],
+    loader: "custom",
+  },
   // headers: headers,
 };
 

@@ -27,6 +27,7 @@ export function PersonCard({
         <div className="picture flex  min-w-[4rem] min-h-[4em] w-20 md:w-24  relative mb-4 items-center">
           <Link href={personalUrl} target="_blank">
             <Image
+              loader={({ src }) => src}
               className="hover:scale-[1.02] transition-all rounded-full w-20 sm:w-auto hover:cursor-pointer"
               alt={name}
               src={imgSrc}
