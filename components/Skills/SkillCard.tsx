@@ -34,6 +34,7 @@ export function SkillCard({
           )}
           <div className="flex picture w-20 h-20  justify-center items-center">
             <Image
+              loader={({ src }) => src}
               className={
                 blackLogo
                   ? "logo filter-none dark:filter invert saturate-0"
