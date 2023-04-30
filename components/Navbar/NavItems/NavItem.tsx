@@ -14,7 +14,7 @@ export const NavItem: FunctionComponent<IProps> = ({ name, href }: IProps) => {
   return (
     <>
       <Link
-        className={`${isActiveClass} text-gray-800 dark:text-gray-200 dark:border-l-gray-700 px-6 py-4 last:border-b-0 md:inline-block sm:px-12 md:px-3 md:py-2 border-b md:border-b-0 md:border-l md:hover:translate-x-[-2px] transition-all`}
+        className={`${isActiveClass} text-gray-800 border-b border-b-gray-700 dark:text-gray-200 dark:border-l-gray-700 px-6 py-4 last:border-b-0 md:inline-block sm:px-12 md:px-3 md:py-2 md:border-b-0 md:border-l md:hover:translate-x-[-2px] transition-all`}
         href={href}
       >
         <span>{name}</span>
