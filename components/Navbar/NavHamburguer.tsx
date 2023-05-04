@@ -5,7 +5,7 @@ import {
   SetStateAction,
   useEffect,
 } from "react";
-import { FiMenu } from "react-icons/fi";
+import { FiMenu, FiX } from "react-icons/fi";
 
 interface IProps {
   open: ReactNode;
@@ -48,7 +48,18 @@ export const NavHamburguer: FunctionComponent<IProps> = ({
       aria-label="Toggle menu"
       type="button"
     >
-      <FiMenu size={25} />
+      <FiX
+        className={`absolute transition-opacity duration-150 ${
+          open ? "opacity-100" : "opacity-0"
+        }`}
+        size={25}
+      />
+      <FiMenu
+        className={`absolute transition-opacity duration-150 ${
+          open ? "opacity-0" : "opacity-100"
+        }`}
+        size={25}
+      />
     </button>
   );
 };
