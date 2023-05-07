@@ -1,12 +1,27 @@
+import { useEffect, useState } from "react";
 import { SkillCard } from "./SkillCard";
 import { HiOutlineCog8Tooth } from "react-icons/hi2";
 
 export default function Skills() {
+  const [isSpinning, setIsSpinning] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsSpinning(false);
+    }, 2000);
+
+    return () => {
+      clearTimeout(timer);
+    };
+  }, []);
+
   return (
     <div className="py-5">
       <h1 className="flex text-xl font-bold pt-14 pb-8 text-slate-900 sm:text-xl dark:text-gray-200 justify-center">
         <p className="flex justify-center items-center">
-          <HiOutlineCog8Tooth />
+          <HiOutlineCog8Tooth
+            className={isSpinning ? "animate-spin" : "hover:animate-spin"}
+          />
           &nbsp;Skills&nbsp;
         </p>
       </h1>
