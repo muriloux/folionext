@@ -32,6 +32,9 @@ html,
 body {
   width: 100vw;
   overflow-x: hidden;
+  font-smooth: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
 }
 
 body {
