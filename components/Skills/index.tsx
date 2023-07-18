@@ -37,6 +37,11 @@ export default function Skills() {
           url="https://www.typescriptlang.org/"
         />
         <SkillCard
+          name="Angular"
+          imgSrc="/logos/Angular.svg"
+          url="https://angular.io/"
+        />
+        <SkillCard
           name="ReactJS"
           imgSrc="/logos/React.svg"
           url="https://reactjs.org/"
